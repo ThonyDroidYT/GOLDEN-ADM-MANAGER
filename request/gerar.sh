@@ -210,7 +210,7 @@ echo "$MSGNEW" > ${SCPT_DIR}/message.txt
 echo -e "$BARRA"
 }
 atualizar_geb () {
-wget -O $HOME/instger.sh https://www.dropbox.com/s/c7q068qh41rg2px/instgenkey.sh &>/dev/null
+wget -O $HOME/instger.sh https://raw.githubusercontent.com/ThonyDroidYT/GOLDEN-ADM-MANAGER/master/instgerador.sh &>/dev/null
 chmod +x $HOME/instger.sh
 cd $HOME
 ./instger.sh
