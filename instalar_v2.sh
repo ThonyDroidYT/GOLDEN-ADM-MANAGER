@@ -6,8 +6,6 @@ SCPidioma="${SCPdir}/idioma"
 SCPusr="${SCPdir}/ger-user"
 SCPfrm="/etc/ger-frm"
 SCPinst="/etc/ger-inst"
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dvbGRlbkFETVBSTy9HT0xERU4tQURNLU1BTkFHRVIvbWFzdGVyL3JlcXVlc3Q="
-SUB_DOM='base64 -d'
 [[ $(dpkg --get-selections|grep -w "gawk"|head -1) ]] || apt-get install gawk -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "mlocate"|head -1) ]] || apt-get install mlocate -y &>/dev/null
 rm $(pwd)/$0 &> /dev/null
@@ -93,7 +91,7 @@ byinst="true"
 install_fim () {
 msg -ama "$(source trans -b es:${id} "INSTALACION CON EXITO, 
 PARA ABRIR EL SCRIPT, ESCRIBA"|sed -e 's/[^a-z -]//ig')" && msg bar2
-echo -e " adm / oro" && msg -verm "$(source trans -b es:${id} "
+echo -e " golden / adm / menu" && msg -verm "$(source trans -b es:${id} "
 REINICIE SU VPS CON EL COMANDO reboot PARA COMPLETAR LA INSTALACION"|sed -e 's/[^a-z -]//ig')"
 msg -bar2
 }
@@ -172,7 +170,7 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b pt:${id} "BEM VINDO, OBRIGADO POR UTILIZAR"|sed -e 's/[^a-z -]//ig'): \033[1;31m[NEW-ULTIMATE]"
+   msg -ama "$(source trans -b pt:${id} "EU SOU DEADSHOT, OBRIGADO POR USAR"|sed -e 's/[^a-z -]//ig'): \033[1;31m[GOLDEN ADM PRO]"
    REQUEST=$(ofus "$Key"|cut -d'/' -f2)
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
@@ -189,8 +187,9 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    cat /etc/bash.bashrc|grep -v '[[ $UID != 0 ]] && TMOUT=15 && export TMOUT' > /etc/bash.bashrc.2
    echo -e '[[ $UID != 0 ]] && TMOUT=15 && export TMOUT' >> /etc/bash.bashrc.2
    mv -f /etc/bash.bashrc.2 /etc/bash.bashrc
+   echo "${SCPdir}/menu" > /usr/bin/golden && chmod +x /usr/bin/golden
    echo "${SCPdir}/menu" > /usr/bin/adm && chmod +x /usr/bin/adm
-   echo "${SCPdir}/menu" > /usr/bin/oro && chmod +x /usr/bin/oro
+   echo "${SCPdir}/menu" > /usr/bin/menu && chmod +x /usr/bin/menu
    inst_components
    echo "$Key" > ${SCPdir}/key.txt
    [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}   
