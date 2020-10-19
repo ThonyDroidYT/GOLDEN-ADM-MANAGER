@@ -75,7 +75,7 @@ rm $HOME/lista-arq
 echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 echo "/usr/bin/gerar.sh" > /usr/bin/gerar && chmod +x /usr/bin/gerar
 echo "/usr/bin/gerar.sh" > /usr/bin/goldengen && chmod +x /usr/bin/goldengen
-echo -e "\033[1;33m Perfeito, Use o Comando \033[1;31mgerar.sh o gerar \033[1;33mpara Gerenciar as Suas Keys e
+echo -e "\033[1;33m Perfeito, Use o Comando \033[1;31m gerar.sh o gerar o \033[1;33 goldengen \033[1;33mpara Gerenciar as Suas Keys e
  Atualizar a Base do servidor"
 echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 } || {
