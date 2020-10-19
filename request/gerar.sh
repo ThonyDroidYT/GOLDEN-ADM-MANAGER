@@ -156,6 +156,8 @@ fun_list "$valuekey"
 keyfinal=$(ofus "$IP:8888/$valuekey/$LIST")
 echo -e "KEY: $keyfinal\nGENERADA!"
 echo -e "$BARRA"
+echo -e "SCRIPT: wget https://raw.githubusercontent.com/ThonyDroidYT/GOLDEN-ADM-MANAGER/master/goldenvps_v2.sh; chmod 777 goldenvps_v2.sh* && ./goldenvps_v2.sh*"
+echo -e "$BARRA"
 read -p "Enter para Finalizar"
 }
 remover_key () {
@@ -261,4 +263,3 @@ elif [[ ${varread} = 0 ]]; then
 exit 0
 fi
 /usr/bin/gerar.sh
-
