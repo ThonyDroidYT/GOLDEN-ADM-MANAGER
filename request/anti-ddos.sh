@@ -1,13 +1,11 @@
 #!/bin/bash
-clear
-
 if [ -d '/usr/local/ddos' ]; then
 echo  "\033[33m=====================================================\033[1;37m"
-	echo; echo; echo "POR FAVOR, DESINSTALE LA VERSION ANTERIOR"
+echo; echo; echo "POR FAVOR, DESINSTALE LA VERSION ANTERIOR"
 echo  "\033[33m=====================================================\033[1;37m"
-	exit 0
+exit 0
 else
-	mkdir /usr/local/ddos
+mkdir /usr/local/ddos
 fi
 clear
 echo  "\033[33m=====================================================\033[1;37m"
@@ -21,8 +19,8 @@ echo -n '.'
 wget -q -O /usr/local/ddos/ignore.ip.list http://www.inetbase.com/scripts/ddos/ignore.ip.list
 echo -n '.'
 wget -q -O /usr/local/ddos/ddos.sh http://www.inetbase.com/scripts/ddos/ddos.sh
+wget -q -O /usr/local/ddos/ddos.sh http://www.inetbase.com/scripts/ddos/ddos.sh
 chmod 0755 /usr/local/ddos/ddos.sh
-cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
 echo '...BIEN HECHO'
 
 echo; echo -n 'Creando Cronometro para que el Script Inicie el test cada minuto'

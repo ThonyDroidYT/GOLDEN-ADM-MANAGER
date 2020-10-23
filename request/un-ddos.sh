@@ -1,3 +1,4 @@
+#!/bin/sh
 echo; echo "Uninstalling DOS-Deflate"
 echo; echo; echo -n "Deleting script files....."
 if [ -e '/usr/local/sbin/ddos' ]; then

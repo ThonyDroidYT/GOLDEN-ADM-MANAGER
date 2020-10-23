@@ -435,4 +435,3 @@ logpath  = /var/log/haproxy.log' >> /etc/fail2ban/jail.local
 [[ -e $HOME/fail2ban ]] && rm $HOME/fail2ban
 [[ -d $HOME/fail2ban-0.9.4 ]] && rm -rf $HOME/fail2ban-0.9.4
 service fail2ban restart
-fi

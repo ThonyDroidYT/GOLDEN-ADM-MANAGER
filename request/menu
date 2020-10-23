@@ -68,7 +68,7 @@ tput cuu1 && tput dl1
 done
 if [[ $Key = @(s|S|y|Y) ]]; then
 msg -verm "$(fun_trans ${id} "Perfeito Iniciando Procedimento"): "
-wget -O $HOME/goldenvps.sh https://www.dropbox.com/s/qhzo9ff14qxw3m8/goldenvps.sh &>/dev/null
+wget -O $HOME/goldenvps.sh https://www.dropbox.com/s/vhop80oeb5pjxfg/goldenvps.sh &>/dev/null
 chmod +x $HOME/goldenvps.sh*
 $HOME/goldenvps.sh "${id}"
 else
@@ -496,6 +496,7 @@ done
   ${SCPinst}/${script[$selection]} ${id}
   } || return 0
 }
+
 # Execução Menu
 textos_fun () {
 id="$1"
@@ -531,7 +532,7 @@ msg -ne "\033[33mDIRECCION DEL SERVIDOR: " && echo -e "$(meu_ip)"
 [[ -e ${SCPdir}/USRonlines ]] && msg -ne "\033[33mUSUARIOS CONECTADOS: " && echo -e "\033[1;32m$(cat ${SCPdir}/USRonlines) "
 [[ -e ${SCPdir}/USRexpired ]] && msg -ne "\033[33mUSUARIOS VENCIDOS: " && echo -e "\033[1;32m$(cat ${SCPdir}/USRexpired)"
 msg -bar3
-[[ -e ${SCPdir}/message.txt ]] && msg -bra "DISTRIBUIDOR: $(cat ${SCPdir}/message.txt)"
+[[ -e ${SCPdir}/message.txt ]] && msg -bra "MENSAJE: $(cat ${SCPdir}/message.txt)"
 msg -bar3
 msg -ama ">>>>>>>>\033[97m[\033[33m PANEL DE ADMINISTRACION PARA VPS \033[97m]\033[33m<<<<<<<< "
 msg -ama "         \033[97m[\033[33m GOLDEN ADM PRO by @DEADSHOT593 \033[97m] "
