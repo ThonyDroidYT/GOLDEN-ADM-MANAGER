@@ -18,7 +18,7 @@ def slowprint(s):
         time.sleep(4. / 100)
 banner = '''
 ========= ToolMaster =======\033[91m
-==== LA CASITA DEL TERROR ====\033[96m
+==== GOLDEN ADM PRO SCRIPT ====\033[96m
 '''
 print banner
 def menu():
@@ -38,7 +38,7 @@ def menu():
 \033[91m [0] \033[92m>\033[96m Salir
 \033[91m==============================
 '''
-slowprint("   \033[1;34mNEW-AMD" + " - toolmaster")
+slowprint("   \033[1;34mNEW-ADM-GOLD" + " - toolmaster")
 
 menu()
 def ext():
@@ -118,7 +118,7 @@ def  select():
     elif joker == 11:
       slowprint("ToolMaster \033[92m")
       slowprint(".....................")
-      slowprint("LA CASITA DEL TERROR \033[96m")
+      slowprint("GOLDEN ADM PRO SCRIPT\033[96m")
       slowprint(".........................")
       ext() 
     elif joker == 0:
