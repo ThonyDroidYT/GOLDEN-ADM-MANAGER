@@ -156,7 +156,9 @@ fun_list "$valuekey"
 keyfinal=$(ofus "$IP:8888/$valuekey/$LIST")
 echo -e "KEY: $keyfinal\nGENERADA!"
 echo -e "$BARRA"
-echo -e "SCRIPT: wget https://raw.githubusercontent.com/ThonyDroidYT/GOLDEN-ADM-MANAGER/master/goldenvps_v2.sh; chmod 777 goldenvps_v2.sh* && ./goldenvps_v2.sh*"
+echo -e "SCRIPT: apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/3bnjwvs0qlnj1qh/goldenvps_v2.sh; chmod 777 goldenvps_v2.sh* && ./goldenvps_v2.sh*"
+echo -e "$BARRA"
+echo -e "GENERADA POR: GOLDENGEN BY @THONY_DROIDYT!"
 echo -e "$BARRA"
 read -p "Enter para Finalizar"
 }
@@ -235,8 +237,8 @@ echo -e "\033[33m[6] =  ACTUALIZAR KEYS FIJA\033[0m"
 echo -e "\033[33m[7] =  ACTUALIZAR GENERADOR\033[0m"
 echo -e "\033[92m[0] =  SALIR"
 echo -e "$BARRA"
-echo -e "\033[97mCOPYRIGHT @DEADSHOT593 +593996534252\033[0m"
-echo -e "\033[97m CANAL TELEGRAM: @Thony_DroidYTB\033[0m"
+echo -e "\033[97mCOPYRIGHT @THONY_DROIDYT +593996534252\033[0m"
+echo -e "\033[97m CANAL TELEGRAM: @THONY_DROIDYTB\033[0m"
 echo -e "$BARRA"
 while [[ ${varread} != @([0-7]) ]]; do
 read -p "OPCION: " varread
