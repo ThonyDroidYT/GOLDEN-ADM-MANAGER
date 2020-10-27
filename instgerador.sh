@@ -37,7 +37,7 @@ esac
 mv -f $HOME/$1 ${ARQ}/$1
 chmod +x ${ARQ}/$1
 }
-echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
+echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 meu_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MIP2=$(wget -qO- ipv4.icanhazip.com)
@@ -45,19 +45,21 @@ MIP2=$(wget -qO- ipv4.icanhazip.com)
 echo "$IP" > /usr/bin/vendor_code
 }
 meu_ip
-echo -e "\033[1;36mInstalando Arquivos... "
-echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
+echo -e "\033[1;36mInstalando Archivos... "
+echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
+echo -e "\033[1;36mINSTALANDO GOLDENGEN BY @THONY_DROIDYT... "
+echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 cd $HOME
 REQUEST=$(echo $SCPresq|$SUB_DOM)
 wget -O "$HOME/lista-arq" ${REQUEST}/GERADOR > /dev/null 2>&1
 sleep 1s
 [[ -e $HOME/lista-arq ]] && {
 for arqx in `cat $HOME/lista-arq`; do
-echo -ne "\033[1;33mBaixando Arquivo \033[1;31m[$arqx] "
+echo -ne "\033[1;33mDescargando Archivo \033[1;31m[$arqx] "
 wget -O $HOME/$arqx ${REQUEST}/${arqx} > /dev/null 2>&1 && {
-echo -e "\033[1;31m- \033[1;32mRecebido Com Sucesso!"
+echo -e "\033[1;31m- \033[1;32mRecebido Con Éxito!"
 [[ -e $HOME/$arqx ]] && veryfy_fun $arqx
-} || echo -e "\033[1;31m- \033[1;31mFalha (nao recebido!)"
+} || echo -e "\033[1;31m- \033[1;31mFalla (no recebido!)"
 done
 [[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-NEW-ULTIMATE-ORIGINAL/Install/trans &> /dev/null
 [[ -e /bin/http-server.py ]] && mv -f /bin/http-server.py /bin/http-server.sh && chmod +x /bin/http-server.sh
@@ -72,16 +74,16 @@ service apache2 restart > /dev/null 2>&1 &
 IVAR2="/etc/key-gerador"
 echo "$Key" > $IVAR2
 rm $HOME/lista-arq
-echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
+echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 echo "/usr/bin/gerar.sh" > /usr/bin/gerar && chmod +x /usr/bin/gerar
 echo "/usr/bin/gerar.sh" > /usr/bin/goldengen && chmod +x /usr/bin/goldengen
-echo -e "\033[1;33m Perfeito, Use o Comando \033[1;31m gerar.sh o gerar o \033[1;33 goldengen \033[1;33mpara Gerenciar as Suas Keys e
- Atualizar a Base do servidor"
-echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
+echo -e "\033[1;33m Perfeito, Use el Comando \033[1;31m gerar.sh o gerar o \033[1;33 goldengen \033[1;33mpara Administrar Sus Keys y
+ Actualizar la Base del servidor"
+echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 } || {
-echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
+echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 echo -e "\033[1;31mKey Invalida!"
-echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
+echo -e "\033[1;33m=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=\033[0m"
 }
 echo -ne "\033[0m"
 echo "qra-atsilK?29@%6087%?66d5K8888:%05+08+@@?+91" > /etc/key-gerador
