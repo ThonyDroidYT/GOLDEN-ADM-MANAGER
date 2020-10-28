@@ -9,8 +9,8 @@ BARRA="\033[33m=================================================================
 echo -e "$BARRA"
 cat << EOF
 
-           GENERADOR DE KEYS PRO BY @Thony_DroidYT
-           INSTALACIONES: $(cat $IVAR)
+           GENERADOR DE KEYS PRO BY @THONY_DROIDYT
+           N° DE INSTALACIONES: $(cat $IVAR)
            
 EOF
 [[ -e $IVAR2 ]] && echo -e "\033[1;32mKEY FIJA: $(cat $IVAR2)\033[0m"
