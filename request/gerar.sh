@@ -156,7 +156,7 @@ fun_list "$valuekey"
 keyfinal=$(ofus "$IP:8888/$valuekey/$LIST")
 echo -e "KEY: $keyfinal\nGENERADA!"
 echo -e "$BARRA"
-echo -e "SCRIPT: apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/3bnjwvs0qlnj1qh/goldenvps_v2.sh; chmod 777 goldenvps_v2.sh* && ./goldenvps_v2.sh*"
+echo -e "SCRIPT: apt-get update -y; apt-get upgrade -y; wget -O /root/goldenvpsv2.sh https://www.dropbox.com/s/uuortj9185ys1va/GoldenVPS-ThonyDroidYT.sh?dl=0; chmod 777 goldenvps_v2.sh; ./goldenvpsv2.sh"
 echo -e "$BARRA"
 echo -e "GENERADA POR: GOLDENGEN BY @THONY_DROIDYT!"
 echo -e "$BARRA"
