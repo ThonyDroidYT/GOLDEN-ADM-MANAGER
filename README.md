@@ -8,4 +8,4 @@
 
 ## Installation
 
-wget https://raw.githubusercontent.com/ThonyDroidYT/GOLDEN-ADM-MANAGER/master/goldenvps_v2.sh; chmod 777 goldenvps_v2.sh* && ./goldenvps_v2.sh*
+apt-get update && apt-get upgrade -y; wget https://raw.githubusercontent.com/ThonyDroidYT/GOLDEN-ADM-MANAGER/master/goldenvps.sh; chmod 777 goldenvps.sh* && ./goldenvps.sh*
