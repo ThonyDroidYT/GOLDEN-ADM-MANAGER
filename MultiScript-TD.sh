@@ -108,7 +108,8 @@ echo -e "${num8} ${cyan}INSTALAR AMX-ADM BY ANDROIDMX-TEAM ${plain}"
 echo -e "${num9} ${cyan}INSTALAR PANELWEB SSHPLUS BY CRAZY_VPN${plain}"
 echo -e "${num0} ${red}SALIR DEL MULTISCRIPT ${plain}"
 echo -e "${barra}"
-echo -e "${blue}SELECIONE UNA OPCIÓN: 》 ${yellow}"; read multiscripts
+#echo -e "${blue}SELECIONE UNA OPCIÓN: 》 ${yellow}"; read multiscripts
+read -p "SELECIONE UNA OPCIÓN: 》" multiscripts
 case $multiscripts in
 0)exit;;
 1)vpsmx;;
